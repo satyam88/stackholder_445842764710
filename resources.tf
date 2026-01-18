@@ -21,7 +21,10 @@ module "bucket2" {
   bucket_name = "satyambucketdemo8780"
 }
 
-
+module "bucket3" {
+  source      = "git::https://github.com/satyam88/aws_tf_modules.git//modules/s3bucket?ref=v1.1.0"
+  bucket_name = "satyambucketdemo87833"
+}
 
 module "my_vpc" {
   source          = "git::https://github.com/satyam88/aws_tf_modules.git//modules/vpc?ref=v1.1.2"
