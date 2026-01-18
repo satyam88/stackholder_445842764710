@@ -1,3 +1,16 @@
+provider "aws" {
+  region = "ap-south-1"
+}
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "6.9.0"
+    }
+  }
+}
+
 module "bucket1" {
   source      = "git::https://github.com/satyam88/aws_tf_modules.git//modules/s3bucket?ref=v1.1.0"
   bucket_name = "satyambucketdemo8781"
