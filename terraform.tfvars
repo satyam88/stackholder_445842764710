@@ -1,4 +1,4 @@
-db_name                = "satyam-db"
+db_name                = "satyamdb"
 db_username            = "admin"
 db_password            = "MySecurePass123!"
 instance_class         = "db.t3.micro"
